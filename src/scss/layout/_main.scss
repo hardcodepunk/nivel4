@@ -2,10 +2,101 @@
  * lay-out
  */
 
+.wrapper {
+  padding: 0 34px;
+}
+
+.wrapper--full-height {
+  height: 100%;
+}
+
+.list--horizontal {
+  .list__list-item {
+    display: inline-block;
+  }
+}
+
 /*
  * components
  */
 
+.header {
+  padding: 20px 0;
+  height: 110px;
+  background: $nivel-blue;
+  position: fixed;
+  width: 100%;
+  &__logo {
+    height: 70px;
+    display: inline-block;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    float: right;
+    &__item {
+      font-family: 'DINNextLTProBlack';
+      text-transform: uppercase;
+      font-size: 22px;
+      color: $nivel-green;
+      position: relative;
+      &:hover:not(.button), &.is-active:not(.button) {
+        color: #fff;
+        &:before, &:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 13px 10px 13px;
+          border-color: transparent transparent $nivel-green transparent;
+          @include translateX;
+          bottom: -24px;
+        }
+        &:before {
+          border-width: 0 14px 10px 14px;
+          border-color: transparent transparent $nivel-green transparent;
+          bottom: -14px;
+        }
+        &:after {
+          border-width: 0 7px 9px 7px;
+          border-color: transparent transparent #fff transparent;
+          bottom: -16px;
+        }
+      }
+    }
+    .button {
+      background: $nivel-green;
+      color: $nivel-blue;
+      &:before, &:hover {
+        border-color: transparent transparent $nivel-green transparent;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .list__list-item:not(:last-child) {
+    margin-right: 39px;
+  }
+}
+
 /*
  * styling
  */
+
+.button {
+  padding: 10px 10px 7px 0;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 39px 39px;
+    position: absolute;
+    left: -39px;
+    top: 0;
+  }
+}

@@ -2,6 +2,29 @@
 // Colors
 // =============================================
 
+$nivel-blue: #211550;
+$nivel-green: #05CE7B;
+
 // =============================================
 // Typography
 // =============================================
+
+@font-face {
+    font-family: 'DINNextLTProBlack';
+    src: url('../fonts/DINNextLTProBlack.eot');
+    src: url('../fonts/DINNextLTProBlack.eot') format('embedded-opentype'),
+         url('../fonts/DINNextLTProBlack.woff2') format('woff2'),
+         url('../fonts/DINNextLTProBlack.woff') format('woff'),
+         url('../fonts/DINNextLTProBlack.ttf') format('truetype'),
+         url('../fonts/DINNextLTProBlack.svg#DINNextLTProBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'AachenStdBold';
+    src: url('/assets/fonts/AachenStdBold.eot');
+    src: url('/assets/fonts/AachenStdBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/AachenStdBold.woff2') format('woff2'),
+         url('/assets/fonts/AachenStdBold.woff') format('woff'),
+         url('/assets/fonts/AachenStdBold.ttf') format('truetype'),
+         url('/assets/fonts/AachenStdBold.svg#AachenStdBold') format('svg');
+}
