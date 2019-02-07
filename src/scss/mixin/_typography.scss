@@ -12,10 +12,10 @@
 
 @mixin title-2 {
   margin: 0;
-  margin-bottom: 0.7em;
-  font-size: 3em;
-  font-weight: 200;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
+  font-family: 'AachenStdBold';
+  font-size: 145px;
 }
 
 @mixin title-3 {
