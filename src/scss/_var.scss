@@ -21,10 +21,10 @@ $nivel-green: #05CE7B;
 
 @font-face {
     font-family: 'AachenStdBold';
-    src: url('/assets/fonts/AachenStdBold.eot');
-    src: url('/assets/fonts/AachenStdBold.eot') format('embedded-opentype'),
-         url('/assets/fonts/AachenStdBold.woff2') format('woff2'),
-         url('/assets/fonts/AachenStdBold.woff') format('woff'),
-         url('/assets/fonts/AachenStdBold.ttf') format('truetype'),
-         url('/assets/fonts/AachenStdBold.svg#AachenStdBold') format('svg');
+    src: url('../fonts/AachenStdBold.eot');
+    src: url('../fonts/AachenStdBold.eot') format('embedded-opentype'),
+         url('../fonts/AachenStdBold.woff2') format('woff2'),
+         url('../fonts/AachenStdBold.woff') format('woff'),
+         url('../fonts/AachenStdBold.ttf') format('truetype'),
+         url('../fonts/AachenStdBold.svg#AachenStdBold') format('svg');
 }

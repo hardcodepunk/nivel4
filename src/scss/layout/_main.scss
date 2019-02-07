@@ -4,9 +4,31 @@
 
 .wrapper {
   padding: 0 34px;
+  max-width: 1450px;
+  width: 100%;
+  position: relative;
 }
 
-.wrapper--full-height {
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.flex-container--center-vertically {
+  align-items: center;
+}
+
+.flex-container--justify-center {
+  justify-content: center;
+}
+
+.wrapper--full-height, .section--full-height, .flex-container--full-height {
   height: 100%;
 }
 
@@ -25,6 +47,7 @@
   height: 110px;
   background: $nivel-blue;
   position: fixed;
+  z-index: 10;
   width: 100%;
   &__logo {
     height: 70px;
@@ -48,10 +71,7 @@
           width: 0;
           height: 0;
           border-style: solid;
-          border-width: 0 13px 10px 13px;
-          border-color: transparent transparent $nivel-green transparent;
           @include translateX;
-          bottom: -24px;
         }
         &:before {
           border-width: 0 14px 10px 14px;
@@ -68,16 +88,47 @@
     .button {
       background: $nivel-green;
       color: $nivel-blue;
-      &:before, &:hover {
+      &:before {
         border-color: transparent transparent $nivel-green transparent;
       }
       &:hover {
-        color: #fff;
+        background: #fff;
+        &:before {
+          border-color: transparent transparent #fff transparent;
+        }
       }
     }
   }
   .list__list-item:not(:last-child) {
     margin-right: 39px;
+  }
+}
+
+// introduction
+
+.introduction {
+  background: $nivel-blue;
+  &__illustration {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__img {
+      width: 110%;
+      position: absolute;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    &__text {
+      color: #fff;
+      font-size: 230px;
+      &__sub {
+        font-size: 150px;
+      }
+    }
   }
 }
 
@@ -98,5 +149,26 @@
     position: absolute;
     left: -39px;
     top: 0;
+  }
+}
+
+.arrow {
+  @include translateX;
+  bottom: 50px;
+  &:before, &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    @include translateX;
+  }
+  &:before {
+    border-width: 30px 40px 0 40px;
+    border-color: $nivel-green transparent transparent transparent;
+  }
+  &:after {
+    border-width: 30px 22px 0px 22px;
+    border-color: #fff transparent transparent  transparent;
+    top: -7px;
   }
 }
