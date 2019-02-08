@@ -21,9 +21,23 @@
   position: relative;
 }
 
+.grid {
+  padding: 135px 0 100px;
+  text-align: center;
+  &__item {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
 .row {
   display: flex;
+  margin-bottom: 110px;
+}
 
+.col {
+  padding: 0 50px;
+  width: 100%;
 }
 
 .flex-container--center-vertically {
@@ -148,7 +162,7 @@
   .body-regular {
     color: $nivel-blue;
   }
-  &__service {
+  &__item {
     max-width: 450px;
     margin: 0 auto 110px;
   }
@@ -163,6 +177,20 @@
   }
   .body-regular {
     color: $nivel-green;
+  }
+  &__item {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.products {
+  background: $nivel-gray;
+  .title-2, .title-3 {
+    color: #fff;
+  }
+  .body-regular {
+    color: $nivel-blue;
   }
 }
 
