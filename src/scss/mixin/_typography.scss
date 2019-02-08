@@ -12,6 +12,7 @@
 
 @mixin title-2 {
   margin: 0;
+  margin-bottom: 90px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   font-family: 'AachenStdBold';
@@ -20,10 +21,11 @@
 
 @mixin title-3 {
   margin: 0;
-  margin-bottom: 0.7em;
-  font-size: 2.5em;
-  line-height: 1.2em;
+  margin-bottom: 20px;
   text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  font-family: 'DINNextLTProBlack';
+  font-size: 60px;
 }
 
 @mixin title-4 {
@@ -38,8 +40,7 @@
 
 @mixin title-5 {
   margin: 0;
-  font-size: 1.4em;
-  font-weight: 200;
-  line-height: 1.75em;
   text-rendering: optimizeLegibility;
+  font-family: 'DINNextLTProBold';
+  line-height: 25px;
 }

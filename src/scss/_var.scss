@@ -10,6 +10,16 @@ $nivel-green: #05CE7B;
 // =============================================
 
 @font-face {
+    font-family: 'DINNextLTProBold';
+    src: url('../fonts/DINNextLTProBold.eot');
+    src: url('../fonts/DINNextLTProBold.eot') format('embedded-opentype'),
+         url('../fonts/DINNextLTProBold.woff2') format('woff2'),
+         url('../fonts/DINNextLTProBold.woff') format('woff'),
+         url('../fonts/DINNextLTProBold.ttf') format('truetype'),
+         url('../fonts/DINNextLTProBold.svg#DINNextLTProBold') format('svg');
+}
+
+@font-face {
     font-family: 'DINNextLTProBlack';
     src: url('../fonts/DINNextLTProBlack.eot');
     src: url('../fonts/DINNextLTProBlack.eot') format('embedded-opentype'),

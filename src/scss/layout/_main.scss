@@ -21,6 +21,11 @@
   position: relative;
 }
 
+.row {
+  display: flex;
+
+}
+
 .flex-container--center-vertically {
   align-items: center;
 }
@@ -137,8 +142,27 @@
   background: $nivel-green;
   padding: 135px 0 100px;
   text-align: center;
-  &__title {
+  .title-2, .title-3 {
     color: #fff;
+  }
+  .body-regular {
+    color: $nivel-blue;
+  }
+  &__service {
+    max-width: 450px;
+    margin: 0 auto 110px;
+  }
+}
+
+.strategy {
+  background: $nivel-blue;
+  padding: 135px 0 100px;
+  text-align: center;
+  .title-2, .title-3 {
+    color: #fff;
+  }
+  .body-regular {
+    color: $nivel-green;
   }
 }
 
