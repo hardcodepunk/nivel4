@@ -269,6 +269,10 @@ input[type=submit] {
   background: $nivel-green;
   color: $nivel-blue;
   position: relative;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+  }
 }
 .input-container--with-triangle {
   position: relative;
@@ -282,6 +286,11 @@ input[type=submit] {
     left: -45px;
     top: 0;
     border-color: transparent transparent $nivel-green transparent;
+  }
+  &:hover {
+    &:before {
+      border-color: transparent transparent #fff transparent;
+    }
   }
 }
 
