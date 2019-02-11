@@ -121,7 +121,50 @@
     <h2 class="title-2">Blog</h2>
   </div>
 </section>
-<footer class="footer">
+<footer id="contact" class="footer">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col col--no-padding">
+        <div class="footer__contact">
+          <img class="footer__contact__logo" src="assets/img/logo.svg" alt="Nivel4 logo" title="NIVEL4 Cybersecurity Services"/>
+          <h4 class="title-5">Cybersecurity front based in Santiago, Chile.</h4>
+          <p class="body-regular">
+            Av. Providencia 1208, Oficina 1204, Providencia, RM, Chile
+            <br>+56 2 22481368
+          </p>
+          <div class="flex-container">
+            <a href="#" class="social-icon">
+              <img class="social-icon__linkedin" src="assets/img/icons/social-icon__linkedin.svg" alt="linkedin" title="NIVEL4 Linkedin"/>
+            </a>
+            <a href="#" class="social-icon">
+              <img class="social-icon__twitter" src="assets/img/icons/social-icon__twitter.svg" alt="twitter" title="NIVEL4 Twitter"/>
+            </a>
+          </div>
+          <h5 class="title-4">Up your guard</h5>
+          <a class="title-4 title--green" href="mailto:contacto@nivel4.com">contacto@nivel4.com</a>
+        </div>
+      </div>
+      <div class="col col--no-padding">
+        <div class="footer__widgets">
+          <div class="newsletter">
+            <h5 class="title-5 newsletter__title">Security updates and events</h5>
+            <h5 class="title-5 newsletter__title title--green">Subscribe to our newsletter</h5>
+            <div class="form-container">
+              <form action="php/subscribe.php" method="post">
+                <div class="input-container">
+                  <input id="mail" type="email" name="email" placeholder="Your email here">
+                  <input type="hidden" name="csrfToken" value="!!!9e77d!!!97!!!f8!!!!7!9!9dd!89___">
+                </div>
+                <div class="input-container input-container--with-triangle">
+                  <input name="submit" type="submit" value="Subscribe">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <!-- Scripts -->
 <script src="assets/js/script.js"></script>

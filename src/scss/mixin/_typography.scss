@@ -30,15 +30,20 @@
 
 @mixin title-4 {
   margin: 0;
-  margin-bottom: 0.7em;
-  font-size: 1.5em;
-  font-weight: 200;
-  line-height: 1.2em;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  font-family: 'DINNextLTProBlack';
+  font-size: 44px;
 }
 
 @mixin title-5 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-family: 'DINNextLTProBlack';
+  font-size: 22px;
+}
+
+@mixin title-6 {
   margin: 0;
   text-rendering: optimizeLegibility;
   font-family: 'DINNextLTProBold';
