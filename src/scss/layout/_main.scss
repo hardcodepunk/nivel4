@@ -342,6 +342,8 @@ input[type=submit] {
   }
 }
 
+
+
 .arrow {
   @include translateX;
   bottom: 50px;
@@ -356,11 +358,13 @@ input[type=submit] {
   &:before {
     border-width: 30px 40px 0 40px;
     border-color: $nivel-green transparent transparent transparent;
+    animation: translateBigBlade 4s infinite ease-out;
   }
   &:after {
     border-width: 30px 22px 0px 22px;
     border-color: #fff transparent transparent  transparent;
     top: -7px;
+    animation: translateSmallBlade 4s infinite ease-out;
   }
 }
 
