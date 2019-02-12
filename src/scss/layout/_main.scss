@@ -136,7 +136,10 @@
       font-size: 22px;
       color: $nivel-green;
       position: relative;
-      &:hover:not(.button), &.is-active:not(.button) {
+      &:hover:not(.button) {
+        color: #fff;
+      }
+      &.is-active:not(.button) {
         color: #fff;
         &:before, &:after {
           content: '';
@@ -163,7 +166,7 @@
       &:before {
         border-color: transparent transparent $nivel-green transparent;
       }
-      &:hover {
+      &:hover, &.is-active {
         background: #fff;
         &:before {
           border-color: transparent transparent #fff transparent;
