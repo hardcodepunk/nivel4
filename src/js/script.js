@@ -15,8 +15,8 @@ for (var i = 0; i < navItem.length; i++) {
       console.log('has-open-menu');
       body.classList.remove('open-menu');
     }
-  });
-}
+  })
+};
 
 // scroll when clicking the introduction arrow
 document.getElementById('js-start-scrolling').onclick = function() {

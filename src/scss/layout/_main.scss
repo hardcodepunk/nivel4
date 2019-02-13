@@ -2,6 +2,10 @@
  * lay-out
  */
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   padding: 0 34px;
   max-width: 1450px;
@@ -236,6 +240,33 @@
   &__item {
     max-width: 450px;
     margin: 0 auto;
+  }
+  &__phase {
+    position: relative;
+    margin-top: 270px;
+    &:before {
+      content: "";
+      height: 200px;
+      width: 200px;
+      background: url("../img/icons/strategy-icon__entrena.svg");
+      @include translateX();
+      top: -270px;
+    }
+  }
+  &__phase-2 {
+    &:before {
+      background: url("../img/icons/strategy-icon__ataca.svg");
+    }
+  }
+  &__phase-3 {
+    &:before {
+      background: url("../img/icons/strategy-icon__construye.svg");
+    }
+  }
+  &__phase-4 {
+    &:before {
+      background: url("../img/icons/strategy-icon__explora.svg");
+    }
   }
 }
 
