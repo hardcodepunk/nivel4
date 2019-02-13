@@ -7,12 +7,45 @@
       }
     }
   }
+  .footer {
+    text-align: center;
+    .row {
+      flex-wrap: wrap;
+    }
+    .col--no-padding:not(:first-child) {
+      margin-top: 70px;
+    }
+    &__contact {
+      &__logo {
+        margin: 40px auto;
+      }
+      .flex-container {
+        justify-content: center;
+      }
+    }
+    .newsletter {
+      float: none;
+      .form-container {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 @media only screen and (min-height: 1200px) and (max-width: 1200px) {
   .flex-container--full-height {
     flex-wrap: wrap;
     align-content: center;
+  }
+  .grid {
+    .row {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      .col {
+        margin-bottom: 110px;
+      }
+    }
+
   }
   .introduction {
     &__title {
