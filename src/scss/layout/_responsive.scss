@@ -45,7 +45,6 @@
         margin-bottom: 110px;
       }
     }
-
   }
   .introduction {
     &__title {
@@ -60,6 +59,18 @@
         width: 50%;
         position: relative;
         margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid {
+    .row {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      .col {
+        margin-bottom: 110px;
       }
     }
   }
@@ -111,6 +122,32 @@
         display: block;
       }
     }
+  }
+  .flex-container--full-height {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .introduction {
+    &__title {
+      justify-content: center;
+      text-align: center;
+      &__text {
+        margin: 70px 0;
+      }
+    }
+    &__illustration {
+      &__img {
+        width: 50%;
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+  }
+  .h2, .title-2 {
+    font-size: 100px;
+  }
+  .h3, .title-3 {
+    font-size: 40px;
   }
 }
 
