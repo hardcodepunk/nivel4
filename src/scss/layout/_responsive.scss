@@ -1,8 +1,38 @@
-@media only screen and (max-width: 900px) {
-  .body.open-menu {
-    //overflow: hidden;
+@media only screen and (max-width: 1200px) {
+  .introduction {
+    &__title__text {
+      font-size: 170px;
+      &__sub {
+        font-size: 111px;
+      }
+    }
   }
+}
 
+@media only screen and (min-height: 1200px) and (max-width: 1200px) {
+  .flex-container--full-height {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .introduction {
+    &__title {
+      justify-content: center;
+      text-align: center;
+      &__text {
+        margin: 140px 0;
+      }
+    }
+    &__illustration {
+      &__img {
+        width: 50%;
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .header {
     &__nav {
       float: none;
@@ -35,9 +65,6 @@
       display: block;
     }
   }
-
-
-
   .open-menu .header {
     height: 100%;
     .list--center-on-mobile {
