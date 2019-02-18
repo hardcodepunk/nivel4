@@ -224,6 +224,76 @@ body, html {
   &__item {
     max-width: 450px;
     margin: 0 auto 110px;
+    position: relative;
+  }
+  &__footprints {
+    position: absolute;
+    bottom: 0;
+    right: -130px;
+    &__print {
+      position: absolute;
+      height: 20px;
+      transform: rotate(180deg);
+      &__print-1 {
+        transform: rotate(140deg);
+        left: -80px;
+        bottom: 40px;
+        animation: footprint-1 8s infinite linear;
+      }
+      &__print-2 {
+        transform: rotate(140deg);
+        bottom: 40px;
+        left: -40px;
+        animation: footprint-2 8s infinite linear;
+      }
+      &__print-3 {
+        transform: rotate(150deg);
+        left: -40px;
+        animation: footprint-3 8s infinite linear;
+      }
+      &__print-4 {
+        transform: rotate(150deg);
+        animation: footprint-4 8s infinite linear;
+      }
+      &__print-5 {
+        left: -20px;
+        bottom: -85px;
+        animation: footprint-5 8s infinite linear;
+      }
+      &__print-6 {
+        left: 20px;
+        bottom: -75px;
+        animation: footprint-6 8s infinite linear;
+      }
+      &__print-7 {
+        transform: rotate(-150deg);
+        left: -40px;
+        bottom: -140px;
+        animation: footprint-7 8s infinite linear;
+      }
+      &__print-8 {
+        transform: rotate(-150deg);
+        bottom: -140px;
+        animation: footprint-8 8s infinite linear;
+      }
+      &__print-9 {
+        transform: rotate(-140deg);
+        left: -80px;
+        bottom: -200px;
+        animation: footprint-9 8s infinite linear;
+      }
+      &__print-10 {
+        transform: rotate(-140deg);
+        bottom: -200px;
+        left: -40px;
+        animation: footprint-10 8s infinite linear;
+      }
+    }
+  }
+  &__footprints--left {
+    right: auto;
+    left: -130px;
+    transform: scaleX(-1);
   }
 }
 
@@ -376,7 +446,11 @@ input[type=submit] {
   }
 }
 
-
+.anchor {
+  &:hover {
+    border-bottom: 4px $nivel-green solid;
+  }
+}
 
 .arrow {
   @include translateX;

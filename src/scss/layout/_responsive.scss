@@ -187,9 +187,11 @@
   .input-container {
     float: none;
     margin-bottom: 20px;
-
   }
   .input-container--with-triangle {
+    .button {
+      padding: 10px 10px 7px 10px;
+    }
     &:before {
       content: none;
     }
