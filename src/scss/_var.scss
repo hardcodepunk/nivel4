@@ -11,6 +11,16 @@ $nivel-gray: #9A989A;
 // =============================================
 
 @font-face {
+  font-family: 'DINNextLTPro-Regular';
+  src: url('../fonts/DINNextLTPro-Regular.eot');
+  src: url('../fonts/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DINNextLTPro-Regular.svg#DINNextLTPro-Regular') format('svg'),
+       url('../fonts/DINNextLTPro-Regular.ttf') format('truetype'),
+       url('../fonts/DINNextLTPro-Regular.woff') format('woff'),
+       url('../fonts/DINNextLTPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
     font-family: 'DINNextLTProBold';
     src: url('../fonts/DINNextLTProBold.eot');
     src: url('../fonts/DINNextLTProBold.eot') format('embedded-opentype'),
