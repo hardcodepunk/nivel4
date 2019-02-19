@@ -71,6 +71,7 @@
       margin-bottom: 0;
       .col {
         margin-bottom: 110px;
+        padding: 0;
       }
     }
   }
@@ -152,6 +153,11 @@
   .services__footprints {
     display: none;
   }
+  .footer {
+    .row {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) and (max-height: 1024px) {
@@ -184,7 +190,7 @@
   .h3, .title-3 {
     font-size: 40px;
   }
-  .services {
+  .services, .grid {
     padding: 90px 0 10px;
   }
   .input-container {
@@ -206,7 +212,7 @@
     justify-content: space-evenly;
   }
   .social-icon {
-    margin: 70px 0 90px 0;
+    margin: 35px 0 45px 0;;
   }
 }
 
