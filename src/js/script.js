@@ -1,4 +1,4 @@
-var navItem = document.querySelectorAll('.header__nav__item');
+var navItem = document.querySelectorAll('.js-nav-item');
 var body = document.getElementById('body');
 
 // open mobile menu when clicking on mobile nav icon

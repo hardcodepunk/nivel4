@@ -378,11 +378,87 @@ body, html {
 
 .products {
   background: $nivel-gray;
-  .title-2, .title-3 {
+  .title-2, .products__title {
     color: #fff;
+  }
+  .products__title {
+    font-size: 32px;
   }
   .body-regular {
     color: $nivel-blue;
+  }
+  &__service {
+    position: relative;
+    margin-top: 220px;
+    &:before {
+      content: "";
+      width: 200px;
+      height: 150px;
+      background: url("../img/icons/service-icon__web-applications.svg");
+      @include translateX();
+      top: -220px;
+    }
+  }
+  &__service-2 {
+    &:before {
+      background: url("../img/icons/service-icon__internal-networks.svg");
+      width: 168px;
+    }
+  }
+  &__service-3 {
+    &:before {
+      background: url("../img/icons/service-icon__mobile-applications.svg");
+      width: 94px;
+    }
+  }
+  &__service-4 {
+    &:before {
+      background: url("../img/icons/service-icon__wireless-networks.svg");
+      height: 200px;
+      top: -270px;
+    }
+  }
+  &__service-5 {
+    &:before {
+      background: url("../img/icons/service-icon__analysis.svg");
+      width: 153px;
+    }
+  }
+  &__service-6 {
+    &:before {
+      background: url("../img/icons/service-icon__phishing-test.svg");
+      width: 168px;
+      height: 229px;
+      top: -299px;
+    }
+  }
+  &__service-7 {
+    &:before {
+      background: url("../img/icons/service-icon__ddos.svg");
+      width: 170px;
+    }
+  }
+  &__service-8 {
+    &:before {
+      background: url("../img/icons/service-icon__firewall.png");
+      background-size: 100%;
+      height: 200px;
+      top: -270px;
+    }
+  }
+  .button {
+    background: $nivel-green;
+    color: $nivel-blue;
+    font-family: 'DINNextLTProBlack';
+    text-transform: uppercase;
+    padding: 22px 40px 14px;
+    font-size: 40px;
+    &:before {
+      content: none;
+    }
+    &:hover {
+      background: #fff;
+    }
   }
 }
 
