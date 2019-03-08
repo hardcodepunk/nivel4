@@ -7,6 +7,11 @@
       }
     }
   }
+  .spanish {
+    .h2, .title-2 {
+      font-size: 100px;
+    }
+  }
   .footer {
     text-align: center;
     .row {
@@ -75,9 +80,28 @@
       }
     }
   }
+  .spanish {
+    .products .button {
+      font-size: 22px;
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
+  .introduction {
+    min-height: 550px;
+    &__title__text {
+      font-size: 130px;
+      &__sub {
+        font-size: 85px;
+      }
+    }
+  }
+  .spanish {
+    .h2, .title-2 {
+      font-size: 70px;
+    }
+  }
   .header {
     &__nav {
       float: none;
@@ -92,6 +116,12 @@
       opacity: 0;
       z-index: 10;
       box-sizing: border-box;
+      &__language-selector {
+        margin: 5px 0 0 20px;
+        position: fixed;
+        right: 80px;
+        font-size: 16px;
+      }
       &__item {
         &:hover:not(.button), &.is-active:not(.button) {
           &:before, &:after {
@@ -150,8 +180,35 @@
   .h3, .title-3 {
     font-size: 40px;
   }
-  .services__footprints {
-    display: none;
+  .services {
+    &__item {
+      margin: 0 auto 160px;
+    }
+    &__footprints {
+    right: auto;
+    left: auto;
+    bottom: -100px;
+    @include translateX;
+    &__print__print-1, &__print__print-2, &__print__print-3, &__print__print-4 {
+      transform: rotate(180deg);
+      left: auto;
+    }
+    &__print__print-1, &__print__print-3 {
+      left: -25px;
+    }
+    &__print__print-1 {
+      bottom: 50px;
+    }
+    &__print__print-3 {
+      bottom: -10px;
+    }
+    &__print__print-2, &__print__print-4 {
+      left: 5px;
+    }
+    &__print__print-5, &__print__print-6, &__print__print-7, &__print__print-8, &__print__print-9, &__print__print-10 {
+      display: none;
+    }
+  }
   }
   .footer {
     .row {
@@ -217,6 +274,14 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .spanish {
+    .h2, .title-2 {
+      font-size: 36px;
+    }
+    .h3, .title-3, .products .products__title {
+      font-size: 27px;
+    }
+  }
   .h4, .title-4 {
     font-size: 30px;
   }
@@ -268,9 +333,9 @@
   .introduction {
     &__title {
       &__text {
-      font-size: 85px;
+      font-size: 70px;
         &__sub {
-          font-size: 56px;
+          font-size: 45px;
         }
       }
     }
