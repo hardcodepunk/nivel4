@@ -29,14 +29,16 @@ body, html {
   padding: 135px 0 100px;
   text-align: center;
   &__item {
+    margin: 110px auto 40px;
     max-width: 450px;
-    margin: 0 auto;
   }
 }
 
 .row {
   display: flex;
-  margin-bottom: 110px;
+  &:last-child {
+    margin-bottom: 110px;
+  }
 }
 
 .col {
@@ -228,7 +230,10 @@ body, html {
   background: $nivel-green;
   padding: 135px 0 100px;
   text-align: center;
-  .title-2, .title-3 {
+  .title-2 {
+    color: $nivel-blue;
+  }
+  .title-3 {
     color: #fff;
   }
   .body-regular {
@@ -391,8 +396,12 @@ body, html {
 
 .products {
   background: $nivel-gray;
-  .title-2, .products__title {
-    color: #fff;
+  .title-1, .title-2, .products__title {
+    color: $nivel-blue;
+  }
+  .title-1 {
+    font-size: 70px;
+    margin-bottom: 40px;
   }
   .products__title {
     font-size: 32px;
@@ -402,7 +411,7 @@ body, html {
   }
   &__service {
     position: relative;
-    margin-top: 220px;
+    margin-top: 300px;
     &:before {
       content: "";
       width: 200px;
@@ -424,7 +433,7 @@ body, html {
       width: 94px;
     }
   }
-  &__service-4 {
+  &__service-4, &__service-12 {
     &:before {
       background: url("../img/icons/service-icon__wireless-networks.svg");
       height: 200px;
@@ -459,6 +468,69 @@ body, html {
       background-size: 100%;
       height: 200px;
       top: -270px;
+    }
+  }
+  &__service-9 {
+    &:before {
+      background: url("../img/icons/service-icon__secure-development.svg");
+      background-size: 100%;
+      width: 115px;
+    }
+  }
+  &__service-10 {
+    &:before {
+      background: url("../img/icons/service-icon__log.svg");
+      background-size: 100%;
+      width: 105px;
+    }
+  }
+  &__service-11 {
+    &:before {
+      background: url("../img/icons/service-icon__log.svg");
+      background-size: 100%;
+      width: 105px;
+    }
+  }
+  &__service-12 {
+    &:after {
+      content:'lvl up';
+      font-family: 'AachenStdBold';
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 25px;
+      top: -170px;
+      position: absolute;
+    }
+  }
+  &__service-13 {
+    &:before {
+      background: url("../img/icons/service-icon__owasp.svg");
+      background-size: 100%;
+      width: 108px;
+    }
+  }
+  &__service-14 {
+    &:before {
+      background: url("../img/icons/service-icon__servers.svg");
+      background-size: 100%;
+      width: 138px;
+    }
+  }
+  &__service-15 {
+    &:before {
+      background: url("../img/icons/service-icon__pentesting.svg");
+      background-size: 100%;
+      width: 193px;
+    }
+    &:after {
+      content:'lvl up';
+      font-family: 'AachenStdBold';
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 25px;
+      top: -188px;
+      position: absolute;
+      left: 168px;
     }
   }
   .button {
