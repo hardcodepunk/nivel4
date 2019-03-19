@@ -17,6 +17,14 @@ body, html {
 .section {
   width: 100%;
   position: relative;
+  &__intro {
+    max-width: 600px;
+    margin: 0 auto 70px;
+    font-family: 'DINNextLTProBold';
+    line-height: 40px;
+    font-size: 40px;
+    color: $nivel-green;
+  }
 }
 
 .flex-container {
@@ -209,7 +217,12 @@ body, html {
     position: relative;
     &__img {
       width: 110%;
+      padding-bottom: 100%;
+      background: url("../img/wolf.png");
+      background-position: left center;
+      background-size: 200% 100%;
       position: absolute;
+      animation: wolf-animation 7s steps(1) infinite;
     }
   }
   &__title {
@@ -492,7 +505,7 @@ body, html {
     }
   }
   &__service-12 {
-    &:after {
+    /*&:after {
       content:'lvl up';
       font-family: 'AachenStdBold';
       text-transform: uppercase;
@@ -500,7 +513,7 @@ body, html {
       font-size: 25px;
       top: -170px;
       position: absolute;
-    }
+    }*/
   }
   &__service-13 {
     &:before {
@@ -522,7 +535,7 @@ body, html {
       background-size: 100%;
       width: 193px;
     }
-    &:after {
+    /*&:after {
       content:'lvl up';
       font-family: 'AachenStdBold';
       text-transform: uppercase;
@@ -531,7 +544,7 @@ body, html {
       top: -188px;
       position: absolute;
       left: 168px;
-    }
+    }*/
   }
   .button {
     background: $nivel-green;
@@ -547,6 +560,10 @@ body, html {
       background: #fff;
     }
   }
+}
+
+.entrenar {
+  background: #fff;
 }
 
 .footer {

@@ -276,3 +276,12 @@
     visibility: visible;
   }
 }
+
+@keyframes wolf-animation {
+  70% {
+    background-position: right center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
