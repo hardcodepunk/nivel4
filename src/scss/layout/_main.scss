@@ -21,8 +21,8 @@ body, html {
     max-width: 600px;
     margin: 0 auto 70px;
     font-family: 'DINNextLTProBold';
-    line-height: 40px;
-    font-size: 40px;
+    line-height: 34px;
+    font-size: 30px;
     color: $nivel-green;
   }
 }
@@ -37,7 +37,7 @@ body, html {
   padding: 135px 0 100px;
   text-align: center;
   &__item {
-    margin: 110px auto 40px;
+    margin: 110px auto 140px;
     max-width: 450px;
   }
 }
@@ -545,6 +545,29 @@ body, html {
       position: absolute;
       left: 168px;
     }*/
+  }
+  &__service-16 {
+    &:before {
+      background: url("../img/icons/service-icon__pentesting-1.svg");
+      background-size: 100%;
+      width: 198px;
+      height: 200px;
+      top: -256px;
+    }
+  }
+  &__service-17 {
+    &:before {
+      background: url("../img/icons/service-icon__consulting.svg");
+      background-size: 100%;
+      width: 208px;
+    }
+  }
+  &__service-18 {
+    &:before {
+      background: url("../img/icons/service-icon__social-engineering.svg");
+      background-size: 100%;
+      width: 176px;
+    }
   }
   .button {
     background: $nivel-green;
