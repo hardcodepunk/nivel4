@@ -46,9 +46,6 @@
     .row {
       flex-wrap: wrap;
       margin-bottom: 0;
-      .col {
-        margin-bottom: 110px;
-      }
     }
   }
   .introduction {
@@ -60,8 +57,10 @@
       }
     }
     &__illustration {
+      width: 50%;
+      margin: 0 auto;
       &__img {
-        width: 50%;
+        width: 110%;
         position: relative;
         margin: 0 auto;
       }
@@ -75,7 +74,7 @@
       flex-wrap: wrap;
       margin-bottom: 0;
       .col {
-        margin-bottom: 110px;
+        margin-bottom: 40px;
         padding: 0;
       }
     }
@@ -87,7 +86,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1070px) {
   .introduction {
     min-height: 550px;
     &__title__text {
@@ -167,8 +166,10 @@
       }
     }
     &__illustration {
+      width: 50%;
+      margin: 0 auto;
       &__img {
-        width: 50%;
+        width: 110%;
         position: relative;
         margin: 0 auto;
       }
@@ -180,9 +181,17 @@
   .h3, .title-3 {
     font-size: 40px;
   }
+  .strategy {
+    &__phase {
+      margin-bottom: 40px;
+    }
+  }
   .services {
     &__item {
       margin: 0 auto 160px;
+      &:last-child {
+        margin: 0 auto 40px;
+      }
     }
     &__footprints {
     right: auto;
@@ -232,8 +241,10 @@
   .introduction {
     padding-top: 100px;
     &__illustration {
+      width: 40%;
+      margin: 0 auto;
       &__img {
-        width: 40%;
+        width: 110%;
       }
     }
   }
@@ -288,6 +299,11 @@
 }
 
 @media only screen and (max-width: 470px) {
+  .section {
+    &__intro {
+      font-size: 20px;
+    }
+  }
   .introduction {
     &__title__text {
       font-size: 90px;
@@ -296,14 +312,16 @@
       }
     }
     &__illustration {
+      width: 50%;
+      margin: 0 auto;
       &__img {
-        width: 50%;
+        width: 110%;
       }
     }
   }
   .h2, .title-2 {
     font-size: 46px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .h3, .title-3 {
     font-size: 30px;
@@ -340,8 +358,10 @@
       }
     }
     &__illustration {
+      width: 70%;
+      margin: 0 auto;
       &__img {
-        width: 70%;
+        width: 110%;
       }
     }
   }

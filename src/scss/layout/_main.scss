@@ -37,16 +37,13 @@ body, html {
   padding: 135px 0 100px;
   text-align: center;
   &__item {
-    margin: 110px auto 140px;
+    margin: 110px auto 0;
     max-width: 450px;
   }
 }
 
 .row {
   display: flex;
-  &:last-child {
-    margin-bottom: 110px;
-  }
 }
 
 .col {
@@ -210,6 +207,8 @@ body, html {
 .introduction {
   background: $nivel-blue;
   min-height: 740px;
+  padding-top: 0;
+  margin-top: 0;
   &__illustration {
     width: 100%;
     display: flex;
@@ -381,6 +380,7 @@ body, html {
   &__phase {
     position: relative;
     margin-top: 270px;
+    margin-bottom: 110px;
     &:before {
       content: "";
       height: 200px;
@@ -591,7 +591,7 @@ body, html {
 
 .footer {
   background: $nivel-blue;
-  padding: 40px 0 10px;
+  padding: 40px 0 110px;
   color: #fff;
   &__contact {
     width: 100%;
