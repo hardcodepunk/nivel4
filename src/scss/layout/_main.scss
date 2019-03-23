@@ -23,7 +23,6 @@ body, html {
     font-family: 'DINNextLTProBold';
     line-height: 34px;
     font-size: 30px;
-    color: $nivel-green;
   }
 }
 
@@ -221,7 +220,7 @@ body, html {
       background-position: left center;
       background-size: 200% 100%;
       position: absolute;
-      animation: wolf-animation 7s steps(1) infinite;
+      animation: wolf-animation 4s steps(1) infinite;
     }
   }
   &__title {
@@ -237,6 +236,8 @@ body, html {
     }
   }
 }
+
+// services
 
 .services {
   background: $nivel-green;
@@ -363,6 +364,8 @@ body, html {
   }
 }
 
+// strategy
+
 .strategy {
   background: $nivel-blue;
   padding: 135px 0 100px;
@@ -406,6 +409,8 @@ body, html {
     }
   }
 }
+
+// services
 
 .products {
   background: $nivel-gray;
@@ -585,9 +590,22 @@ body, html {
   }
 }
 
+// training
+
 .entrenar {
-  background: #fff;
+  background: $nivel-green;
+  .button {
+    background: $nivel-blue;
+    color: $nivel-green;
+  }
+  .section {
+    &__intro {
+      color: $nivel-blue;
+    }
+  }
 }
+
+// footer
 
 .footer {
   background: $nivel-blue;
@@ -603,9 +621,6 @@ body, html {
       margin-bottom: 24px;
     }
   }
-  &__widgets {
-
-  }
 }
 
 .newsletter {
@@ -613,6 +628,14 @@ body, html {
   &__title {
     text-transform: uppercase;
   }
+}
+
+.copyright {
+  text-align: center;
+  margin: 70px 0;
+  float: right;
+  color: $nivel-green;
+  clear: both;
 }
 
 /*
@@ -739,6 +762,32 @@ input[type=submit] {
   }
   &__twitter {
     margin: -3px -2px 0 0;
+  }
+}
+
+.text-anchor {
+  background: $nivel-green;
+  color: $nivel-blue;
+  padding: 7px 7px 7px 0px;
+  line-height: 31px;
+  position: relative;
+  margin-left: 22px;
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 29px;
+    position: absolute;
+    left: -29px;
+    top: 0;
+    border-color: transparent transparent $nivel-green transparent;
+  }
+  &:hover, &.is-active {
+    background: #fff;
+    &:before {
+      border-color: transparent transparent #fff transparent;
+    }
   }
 }
 
