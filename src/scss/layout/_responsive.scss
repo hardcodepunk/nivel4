@@ -7,10 +7,8 @@
       }
     }
   }
-  .spanish {
-    .h2, .title-2 {
-      font-size: 100px;
-    }
+  .h2, .title-2 {
+    font-size: 100px;
   }
   .footer {
     text-align: center;
@@ -38,7 +36,7 @@
     .copyright {
       margin: 0 auto;
       .text-anchor {
-        padding: 7px;
+        padding: 0 7px 0;
         margin-left: 0;
         &:before {
           content: none;
@@ -95,10 +93,9 @@
       }
     }
   }
-  .spanish {
-    .products .button {
-      font-size: 22px;
-    }
+  .products .button {
+    font-size: 22px;
+    margin-top: 40px;
   }
 }
 
@@ -112,10 +109,8 @@
       }
     }
   }
-  .spanish {
-    .h2, .title-2 {
-      font-size: 70px;
-    }
+  .h2, .title-2 {
+    font-size: 70px;
   }
   .header {
     &__nav {
@@ -297,13 +292,11 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .spanish {
-    .h2, .title-2 {
-      font-size: 36px;
-    }
-    .h3, .title-3, .products .products__title {
-      font-size: 27px;
-    }
+  .h2, .title-2 {
+    font-size: 36px;
+  }
+  .h3, .title-3, .products .products__title {
+    font-size: 27px;
   }
   .h4, .title-4 {
     font-size: 30px;
