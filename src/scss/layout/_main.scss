@@ -443,32 +443,22 @@ body, html {
       top: -220px;
     }
   }
-  &__service-2 {
+  &__service-1 {
     &:before {
-      background: url("../img/icons/service-icon__internal-networks.svg");
-      width: 168px;
-    }
-  }
-  &__service-3 {
-    &:before {
-      background: url("../img/icons/service-icon__mobile-applications.svg");
-      width: 94px;
-    }
-  }
-  &__service-4, &__service-12 {
-    &:before {
-      background: url("../img/icons/service-icon__wireless-networks.svg");
+      background: url("../img/icons/service-icon__pentesting.svg");
+      background-size: 100%;
+      width: 198px;
       height: 200px;
-      top: -270px;
+      top: -256px;
     }
   }
-  &__service-5 {
+  &__service-2 {
     &:before {
       background: url("../img/icons/service-icon__analysis.svg");
       width: 153px;
     }
   }
-  &__service-6 {
+  &__service-3 {
     &:before {
       background: url("../img/icons/service-icon__phishing-test.svg");
       width: 168px;
@@ -476,85 +466,19 @@ body, html {
       top: -299px;
     }
   }
-  &__service-7 {
-    &:before {
-      background: url("../img/icons/service-icon__ddos.svg");
-      width: 170px;
-      height: 239px;
-      top: -296px;
-    }
-  }
-  &__service-8 {
-    &:before {
-      background: url("../img/icons/service-icon__firewall.png");
-      background-size: 100%;
-      height: 200px;
-      top: -270px;
-    }
-  }
-  &__service-9 {
-    &:before {
-      background: url("../img/icons/service-icon__secure-development.svg");
-      background-size: 100%;
-      width: 115px;
-    }
-  }
-  &__service-10 {
-    &:before {
-      background: url("../img/icons/service-icon__log.svg");
-      background-size: 100%;
-      width: 105px;
-    }
-  }
-  &__service-11 {
-    &:before {
-      background: url("../img/icons/service-icon__log.svg");
-      background-size: 100%;
-      width: 105px;
-    }
-  }
-  &__service-13 {
-    &:before {
-      background: url("../img/icons/service-icon__owasp.svg");
-      background-size: 100%;
-      width: 108px;
-    }
-  }
-  &__service-14 {
-    &:before {
-      background: url("../img/icons/service-icon__servers.svg");
-      background-size: 100%;
-      width: 138px;
-    }
-  }
-  &__service-15 {
-    &:before {
-      background: url("../img/icons/service-icon__pentesting.svg");
-      background-size: 100%;
-      width: 193px;
-    }
-  }
-  &__service-16 {
-    &:before {
-      background: url("../img/icons/service-icon__pentesting-1.svg");
-      background-size: 100%;
-      width: 198px;
-      height: 200px;
-      top: -256px;
-    }
-  }
-  &__service-17 {
+  &__service-4 {
     &:before {
       background: url("../img/icons/service-icon__consulting.svg");
       background-size: 100%;
       width: 208px;
     }
   }
-  &__service-18 {
+  &__service-5 {
     &:before {
-      background: url("../img/icons/service-icon__social-engineering.svg");
+      background: url("../img/icons/service-icon__secure-development.svg");
       background-size: 100%;
-      width: 176px;
+      width: 150px;
+      height: 196px;
     }
   }
   .button {
