@@ -7,6 +7,7 @@
   <title>NIVEL4 — Cybersecurity Services</title>
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
 </head>
 <body id="body" class="body">
 <header class="header">
@@ -192,9 +193,7 @@
       </div>
       <div class="col col--no-padding">
         <div class="footer__widgets">
-          <!--<div class="map">
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCxuMnKDFYpYR1OE2VSLMtA0&key=..." allowfullscreen></iframe>
-          </div>-->
+          <div id="map" class="footer__widgets__map"></div>
           <div class="newsletter">
             <h5 class="title-5 newsletter__title">Security updates and events</h5>
             <h5 class="title-5 newsletter__title title--green">Subscribe to our newsletter</h5>
@@ -227,6 +226,7 @@
 </footer>
 <!-- Scripts -->
 <script src="assets/js/keeptrack.js"></script>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

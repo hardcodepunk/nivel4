@@ -528,6 +528,13 @@ body, html {
       margin-bottom: 24px;
     }
   }
+  &__widgets {
+    width: 100%;
+    &__map {
+      height: 400px;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .newsletter {

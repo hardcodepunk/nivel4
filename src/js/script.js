@@ -1,6 +1,18 @@
 var navItem = document.querySelectorAll('.js-nav-item');
 var body = document.getElementById('body');
 
+// initiate leaflet map
+var mymap = L.map('map').setView([-33.429055, -70.621262], 17);
+var marker = L.marker([-33.429055, -70.621262]).addTo(mymap);
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaGFyZGNvZGVwdW5rIiwiYSI6ImNqdWFjbHhpMDAxOGkzeW1pcnBnY2pwajAifQ.iBRgDkBbAEAGieVZURxAzA', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+
 // open mobile menu when clicking on mobile nav icon
 document.getElementById('js-toggle-mobile-nav').onclick = function() {
   body.classList.toggle('open-menu');
