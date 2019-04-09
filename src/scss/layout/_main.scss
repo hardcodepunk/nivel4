@@ -101,7 +101,7 @@ body, html {
   height: 110px;
   background: $nivel-blue;
   position: fixed;
-  z-index: 10;
+  z-index: 9999;
   width: 100%;
   &__inner {
     justify-content: space-between;
