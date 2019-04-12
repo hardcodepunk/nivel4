@@ -531,7 +531,10 @@ body, html {
   &__widgets {
     width: 100%;
     &__map {
-      height: 400px;
+      float: right;
+      height: 300px;
+      max-width: 70%;
+      width: 100%;
       margin-bottom: 40px;
     }
   }

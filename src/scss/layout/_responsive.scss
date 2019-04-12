@@ -33,6 +33,10 @@
         display: inline-block;
       }
     }
+    &__widgets__map {
+      float: none;
+      margin: 0 auto 40px;
+    }
     .copyright {
       margin: 0 auto;
       .text-anchor {
@@ -288,6 +292,9 @@
   }
   .social-icon {
     margin: 35px 0 45px 0;;
+  }
+  .footer__widgets__map {
+    max-width: 100%;
   }
 }
 
